@@ -98,7 +98,7 @@
 								<?php
 								}
 								?>
-								<div style="width:100%; height:480px;" class="dbor">
+								<div style="width:100%; height: 580px;" class="dbor">
 									<span class="t botli">校園映象區</span>
 									<div class="cent" onclick="pp(1)"><img src="./icon//up.jpg" alt=""></div>
 									<?php
