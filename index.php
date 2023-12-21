@@ -85,7 +85,7 @@
 						</div>
 						<!--front-main-end-->
 						<div class="  col-12 col-lg-3 bg-info"><!--右邊-->
-							<div class="di di ad" style="height:540px; width:100%; padding:0px; margin-left:22px; float:left; ">
+							<div class="di di ad diw" style=" padding:0px; margin-left:22px; float:left; ">
 
 								<?php
 								if (isset($_SESSION['login'])) {

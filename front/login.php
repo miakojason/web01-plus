@@ -7,7 +7,7 @@ if(isset($_GET['error'])){
 }
 
 ?>
-<div class="di" style="height:540px; border:#999 1px solid; width:53.2%; margin:2px 0px 0px 0px; float:left; position:relative; left:20px;">
+<div class="di diw" style=" border:#999 1px solid;  margin:2px 0px 0px 0px; float:left; position:relative; left:20px;">
 <?php include "./front/marquee.php";?>
 	<div style="height:32px; display:block;"></div>
 	<!--正中央-->
