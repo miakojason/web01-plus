@@ -22,6 +22,43 @@
 			<div id="cvr" style="position:absolute; width:99%; height:100%; margin:auto; z-index:9898;"></div>
 		</div>
 	</div>
+	<!-- ------------------------------- -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top opacity-75 ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)">Apple</a>
+            <a class="navbar-brand" href="#">
+                <img src="./imgs/apple-logo.svg" alt="Logo" width="30" height="35"
+                    class="d-inline-block align-text-top">
+                <!-- Apple -->
+            </a>
+            <div class="collapse navbar-collapse" id="mynavbar">gi
+                <ul class="navbar-nav me-auto">
+                    <span class="navbar-text">
+                        當海王
+                    </span>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#page1">你朝巴</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#page2">白吊打</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#page3">略略略</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            乙級必勝
+                          </button>
+                </ul>
+                <form class="d-flex justify-content-center">
+                    <span class="navbar-text">Hi你朝巴&nbsp;&nbsp;:))&nbsp;&nbsp;</span>
+                    <!-- <input class="form-control me-2" type="text" placeholder="Search"> -->
+                    <button class="btn btn-outline-primary" type="button">踢燈你</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 	<!-- <iframe style="display:none;" name="back" id="back"></iframe> -->
 	<div class="container-fluid mx-auto ">
 		<div class="row">
