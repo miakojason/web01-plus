@@ -14,30 +14,26 @@
 	<script src="./js/jquery-1.9.1.min.js"></script>
 	<script src="./js/js.js"></script>
 </head>
-
+<style>
+	.container-fluid{
+		margin: 0;
+		padding: 0;
+	}
+</style>
 <body>
-	<div id="cover" style="display:none; ">
-		<div id="coverr">
-			<a style="position:absolute; right:3px; top:4px; cursor:pointer; z-index:9999;" onclick="cl('#cover')">X</a>
-			<div id="cvr" style="position:absolute; width:99%; height:100%; margin:auto; z-index:9898;"></div>
-		</div>
-	</div>
 	<!-- ------------------------------- -->
-	<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top opacity-75 ">
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top opacity-75"style="height:15vh">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="javascript:void(0)">Apple</a>
 			<a class="navbar-brand" href="#">
 				<img src="./imgs/apple-logo.svg" alt="Logo" width="30" height="35" class="d-inline-block align-text-top">
 				<!-- Apple -->
 			</a>
-			<div class="collapse navbar-collapse" id="mynavbar">gi
+			<div class="collapse navbar-collapse" id="mynavbar">
 				<ul class="navbar-nav me-auto">
 					<span class="navbar-text">
 						當海王
 					</span>
-					<li class="nav-item">
-						<a class="nav-link" href="#page1">你朝巴</a>
-					</li>
 					<?php
 					$mainmu = $Menu->all(['sh' => 1, 'menu_id' => 0]);
 					foreach ($mainmu as $main) {
@@ -64,10 +60,6 @@
 					<?php
 					}
 					?>
-					<li class="nav-item">
-						<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-							乙級必勝
-						</button>
 				</ul>
 				<form class="d-flex justify-content-center">
 				<?php
@@ -88,21 +80,20 @@
 			</div>
 		</div>
 	</nav>
-	<!-- <iframe style="display:none;" name="back" id="back"></iframe> -->
-	<div class="container-fluid mx-auto bg-danger " style="margin-top: 60px; ">
+	<div class="container-fluid "style="margin-top:15vh; ">
 		<div class="row">
-			<div class="col-12" style=""><!--上-->
+			<div class="col-12"><!--上-->
 				<?php
 				$title = $Title->find(['sh' => 1]);
 				?>
 				<a title="<?= $title['text']; ?>" href="./index.php">
-					<div class="col-12 ti " style="height:20vh;background:url(&#39;./img/<?= $title['img']; ?>&#39;); background-size:cover;"></div><!--標題-->
+					<div class="ti " style="height:20vh;background:url(&#39;./img/<?= $title['img']; ?>&#39;); background-size:cover;"></div><!--標題-->
 				</a>
 			</div>
 		</div>
 	</div>
 	<!--front-main-start-->
-	<div class="container-fluid mx-auto bg-success">
+	<div class="container-fluid mx-auto  " style="background-color:	#B22222">
 
 		<?php
 		$do = $_GET['do'] ?? 'main';
@@ -116,13 +107,10 @@
 
 	</div>
 	<!--front-main-end-->
-	<div class="container-fulid">
+	<div class="container-fulid bg-info">
 		<div class="row">
-			<div class="  col-12  bg-info"><!--校園印象區右邊-->
-				
-
-
-				<div class="d-flex" style="width:100%; height: 580px;" class="dbor">
+<!--校園印象區右邊-->
+				<div class="col-12 d-flex" style="width:100%; height: 580px;" class="dbor">
 					<span class="t botli">校園映象區</span>
 					<div class="cent" onclick="pp(1)"><img src="./icon//up.jpg" alt=""></div>
 					<?php
@@ -160,7 +148,6 @@
 					</script>
 
 				</div>
-			</div>
 		</div>
 	</div>
 
