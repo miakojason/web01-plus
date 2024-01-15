@@ -15,14 +15,15 @@
 	<script src="./js/js.js"></script>
 </head>
 <style>
-	.container-fluid{
+	.container-fluid {
 		margin: 0;
 		padding: 0;
 	}
 </style>
+
 <body>
 	<!-- ------------------------------- -->
-	<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top opacity-75"style="height:15vh">
+	<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top opacity-75" style="height:15vh">
 		<div class="container-fluid">
 			<a class="navbar-brand" href="javascript:void(0)">Apple</a>
 			<a class="navbar-brand" href="#">
@@ -62,25 +63,22 @@
 					?>
 				</ul>
 				<form class="d-flex justify-content-center">
-				<?php
-				if (isset($_SESSION['login'])) {
-				?>
-					<button style="width:100%; margin-left:auto; margin-right:auto; margin-top:2px; height:50px;" onclick="lo('back.php')">返回管理</button>
-				<?php
-				} else {
-				?>
-					<button style="width:100%; margin-left:auto; margin-right:auto; margin-top:2px; height:50px;" onclick="lo('?do=login')">管理登入</button>
-				<?php
-				}
-				?>
-					<span class="navbar-text">Hi你朝巴&nbsp;&nbsp;:))&nbsp;&nbsp;</span>
-					<!-- <input class="form-control me-2" type="text" placeholder="Search"> -->
-					<button class="btn btn-outline-primary" type="button">踢燈你</button>
+					<?php
+					if (isset($_SESSION['login'])) {
+					?>
+						<button style="width:100%; margin-left:auto; margin-right:auto; margin-top:2px; height:50px;" onclick="lo('back.php')">返回管理</button>
+					<?php
+					} else {
+					?>
+						<button style="width:100%; margin-left:auto; margin-right:auto; margin-top:2px; height:50px;" onclick="lo('?do=login')">管理登入</button>
+					<?php
+					}
+					?>
 				</form>
 			</div>
 		</div>
 	</nav>
-	<div class="container-fluid "style="margin-top:15vh; ">
+	<div class="container-fluid " style="margin-top:15vh; ">
 		<div class="row">
 			<div class="col-12"><!--上-->
 				<?php
@@ -108,54 +106,55 @@
 	</div>
 	<!--front-main-end-->
 	<div class="container-fulid bg-info">
-		<div class="row">
-<!--校園印象區右邊-->
-				<div class="col-12 d-flex" style="width:100%; height: 580px;" class="dbor">
-					<span class="t botli">校園映象區</span>
-					<div class="cent" onclick="pp(1)"><img src="./icon//up.jpg" alt=""></div>
-					<?php
-					$imgs = $Image->all(['sh' => 1]);
+		<div class="row"><!--校園印象區右邊-->
+			<span class="t botli">校園映象區</span>
+			<div class="col-12 d-flex  justify-content-center align-items-center" style="width:100%; height:20vh;" class="dbor">
+				<div class="cent" onclick="pp(1)"><img src="./icon/arrow-1.png" style="width:150px;height:150px"></div>
+				<?php
+				$imgs = $Image->all(['sh' => 1]);
 
-					foreach ($imgs as $idx => $img) {
-					?>
-						<div id="ssaa<?= $idx ?>" class="im cent">
-							<img src="./img/<?= $img['img']; ?>" style="width:150px;height:103px;border:solid orange;margin:3px">
-						</div>
-					<?php
-					}
-					?>
-					<div class="cent" onclick="pp(2)"><img src="./icon/dn.jpg" alt=""></div>
-					<script>
-						//宣告兩個變數，nowpage改1
-						var nowpage = 1,
-							num = <?= $Image->count(['sh' => 1]); ?> //num=count圖片總數
-						function pp(x) {
-							var s, t; //宣告兩個變數
-							if (x == 1 && nowpage - 1 >= 0) {
-								nowpage--;
-							} //page-1
-							if (x == 2 && (nowpage + 1) <= num * 1 - 3) //(nowpage+1)*3改(nowpage+1)。num*1+3改num*1-3(總數-3=剩下要按的次數才可以看完全部照片)
-							{
-								nowpage++;
-							} //page-+1
-							$(".im").hide()
-							for (s = 0; s <= 2; s++) {
-								t = s * 1 + nowpage * 1;
-								$("#ssaa" + t).show()
-							}
-						}
-						pp(2)
-					</script>
-
+				foreach ($imgs as $idx => $img) {
+				?>
+					<div id="ssaa<?= $idx ?>" class="im cent">
+						<img src="./img/<?= $img['img']; ?>" style="width:150px;height:150px;border:solid orange;margin:3px">
+					</div>
+				<?php
+				}
+				?>
+				<div class="cent" onclick="pp(2)">
+					<img src="./icon/arrow-2.png" style="width:150px;height:150px">
 				</div>
+				<script>
+					//宣告兩個變數，nowpage改1
+					var nowpage = 1,
+						num = <?= $Image->count(['sh' => 1]); ?> //num=count圖片總數
+					function pp(x) {
+						var s, t; //宣告兩個變數
+						if (x == 1 && nowpage - 1 >= 0) {
+							nowpage--;
+						} //page-1
+						if (x == 2 && (nowpage + 1) <= num * 1 - 3) //(nowpage+1)*3改(nowpage+1)。num*1+3改num*1-3(總數-3=剩下要按的次數才可以看完全部照片)
+						{
+							nowpage++;
+						} //page-+1
+						$(".im").hide()
+						for (s = 0; s <= 2; s++) {
+							t = s * 1 + nowpage * 1;
+							$("#ssaa" + t).show()
+						}
+					}
+					pp(2)
+				</script>
+
+			</div>
 		</div>
 	</div>
 
 
 	<div style="clear:both;"></div>
-	<div class="container-fulid bg-secondary" style="height: 30vh;"><!--尾-->
+	<div class="container-fulid bg-secondary " style="height: 10vh;"><!--尾-->
 		<div class="row d-flex">
-			<div class="t col-6 ">
+			<div class="t col-6">
 				進站總人數 :<?= $Total->find(1)['total']; ?></div>
 			<div class="t col-6 "><?= $Bottom->find(1)['bottom']; ?></div>
 		</div>
