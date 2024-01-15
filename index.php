@@ -25,9 +25,8 @@
 	<!-- ------------------------------- -->
 	<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top opacity-75" style="height:15vh">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="javascript:void(0)">Apple</a>
 			<a class="navbar-brand" href="#">
-				<img src="./imgs/apple-logo.svg" alt="Logo" width="30" height="35" class="d-inline-block align-text-top">
+				<img src="./icon/Buddha.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
 				<!-- Apple -->
 			</a>
 			<div class="collapse navbar-collapse" id="mynavbar">
