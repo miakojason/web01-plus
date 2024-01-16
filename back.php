@@ -25,7 +25,7 @@ if (!isset($_SESSION['login'])) { //如果沒有session紀錄登入，飛回首�
 	include "./front/nva.php"
 	?>
 	<!-- ---------------------- -->
-	
+
 	<div id="cover" style="display:none; ">
 		<div id="coverr">
 			<a style="position:absolute; right:3px; top:4px; cursor:pointer; z-index:9999;" onclick="cl('#cover')">X</a>
@@ -46,54 +46,50 @@ if (!isset($_SESSION['login'])) { //如果沒有session紀錄登入，飛回首�
 		</div>
 	</div>
 	<div id="main">
-		
 		<div id="ms">
-			<div id="lf" style="float:left;">
+			<div id="lf" style="float:left; width: 20vw; height:80vh;">
 				<div id="menuput" class="dbor">
 					<!--主選單放此-->
 					<span class="t botli">後台管理選單</span>
-					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=title">
+					<a style="color:#000; font-size:20px; text-decoration:none;" href="?do=title">
 						<div class="mainmu">
 							網站標題管理 </div>
 					</a>
-					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=ad">
+					<a style="color:#000; font-size:20px; text-decoration:none;" href="?do=ad">
 						<div class="mainmu">
 							動態文字廣告管理 </div>
 					</a>
-					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=mvim">
+					<a style="color:#000; font-size:20px; text-decoration:none;" href="?do=mvim">
 						<div class="mainmu">
 							動畫圖片管理 </div>
 					</a>
-					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=image">
+					<a style="color:#000; font-size:20px; text-decoration:none;" href="?do=image">
 						<div class="mainmu">
 							校園映象資料管理 </div>
 					</a>
-					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=total">
+					<a style="color:#000; font-size:20px; text-decoration:none;" href="?do=total">
 						<div class="mainmu">
 							進站總人數管理 </div>
 					</a>
-					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=bottom">
+					<a style="color:#000; font-size:20px; text-decoration:none;" href="?do=bottom">
 						<div class="mainmu">
 							頁尾版權資料管理 </div>
 					</a>
-					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=news">
+					<a style="color:#000; font-size:20px; text-decoration:none;" href="?do=news">
 						<div class="mainmu">
 							最新消息資料管理 </div>
 					</a>
-					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=admin">
+					<a style="color:#000; font-size:20px; text-decoration:none;" href="?do=admin">
 						<div class="mainmu">
 							管理者帳號管理 </div>
 					</a>
-					<a style="color:#000; font-size:13px; text-decoration:none;" href="?do=menu">
+					<a style="color:#000; font-size:20px; text-decoration:none;" href="?do=menu">
 						<div class="mainmu">
 							選單管理 </div>
 					</a>
-
-
 				</div>
-			
 			</div>
-			<div class="di" style="height:540px; border:#999 1px solid; width:76.5%; margin:2px 0px 0px 0px; float:left; position:relative; left:20px;">
+			<div class="di" style="height:90vh; border:#999 1px solid; width:76.5%;  float:left; position:relative; left:20px;">
 				<!--正中央-->
 				<table width="100%">
 					<tbody>
@@ -115,9 +111,9 @@ if (!isset($_SESSION['login'])) { //如果沒有session紀錄登入，飛回首�
 				?>
 				<!-- ---back-back end-- -->
 			</div>
-<!-- ----------- -->
-<?php include "./front/footer.php"?>
-<!-- ----------- -->
+			<!-- ----------- -->
+			<?php include "./front/footer.php" ?>
+			<!-- ----------- -->
 
 </body>
 
