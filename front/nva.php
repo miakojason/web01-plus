@@ -44,7 +44,7 @@
 					<?php
 					} else {
 					?>
-						<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; ">Login</button>
+						<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; ">登入佛堂</button>
 						<!-- <button style="width:100%; margin-left:auto; margin-right:auto; margin-top:2px; height:50px;" onclick="lo('?do=login')">管理登入</button> -->
 					<?php
 					}
