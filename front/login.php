@@ -1,3 +1,11 @@
+<?php
+if (isset($_SESSION['login'])) {
+	to("back.php");
+}
+if (isset($_GET['error'])) {
+	echo "<script>alert('{$_GET['error']}')</script>";
+}
+?>
 <style>
 	span {
 		color: yellow;
@@ -14,14 +22,7 @@
 	</div>
 </div>
 <br>
-<?php
-if (isset($_SESSION['login'])) {
-	to("back.php");
-}
-if (isset($_GET['error'])) {
-	echo "<script>alert('{$_GET['error']}')</script>";
-}
-?>
+
 <form action="./api/check.php" method="post">
 	<div class="imgcontainer ">
 		<img src="./img/maxresdefault.jpg" style="height:100%;width:50%;" alt="Avatar" class="avatar">
