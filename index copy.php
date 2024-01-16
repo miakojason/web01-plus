@@ -119,6 +119,7 @@
 	</div>
 	<!--front-main-start-->
 	<div class="container-fluid mx-auto  " style="background-color:	#B22222">
+
 		<?php
 		$do = $_GET['do'] ?? 'main';
 		$file = "./front/{$do}.php";
@@ -128,6 +129,7 @@
 			include "./front/main.php";
 		}
 		?>
+
 	</div>
 	<!--front-main-end-->
 	<div class="container-fulid bg-info">
