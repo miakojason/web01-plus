@@ -316,3 +316,7 @@ button {
 	   width: 100%;
 	}
   } 
+  .container-fluid {
+	margin: 0;
+	padding: 0;
+}

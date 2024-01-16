@@ -1,19 +1,4 @@
-<style>
-    span {
-        color: yellow;
-        font-size: 20px;
-        font-weight: bold;
-        font-family: "標楷體";
-    }
-</style>
-<div class="row mb-2">
-    <div class="col">
-        <span>
-            <?php include "./front/marquee.php"; ?>
-        </span>
-    </div>
-</div>
-<br>
+            <?php include "./front/marquee.php"; ?>  
 <!--正中央-->
 <div class="row">
     <div id="mwww" loop="true" class="col cent" style="height: 70vh;">

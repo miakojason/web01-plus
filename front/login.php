@@ -6,24 +6,9 @@ if (isset($_GET['error'])) {
 	echo "<script>alert('{$_GET['error']}')</script>";
 }
 ?>
-<style>
-	span {
-		color: yellow;
-		font-size: 20px;
-		font-weight: bold;
-		font-family: "標楷體";
-	}
-</style>
-<div class="row mb-2">
-	<div class="col">
-		<span>
-			<?php include "./front/marquee.php"; ?>
-		</span>
-	</div>
-	<div style="height:32px; display:block;"></div>
-</div>
-<br>
 
+			<?php include "./front/marquee.php"; ?>
+	
 <form action="./api/check.php" method="post">
 	<div class="imgcontainer ">
 		<img src="./img/maxresdefault.jpg" style="height:100%;width:50%;" alt="Avatar" class="avatar">
