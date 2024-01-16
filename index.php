@@ -79,7 +79,7 @@
 						<form class="modal-content animate" action="./api/check.php" method="post">
 							<div class="imgcontainer">
 								<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-								<img src="./img/maxresdefault.jpg" style="height: 80px%;width:50%;" alt="Avatar" class="avatar">
+								<img src="./img/maxresdefault.jpg" style="height:80%;width:50%;" alt="Avatar" class="avatar">
 							</div>
 
 							<div class="container">
