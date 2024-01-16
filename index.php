@@ -32,7 +32,7 @@
 			<div class="collapse navbar-collapse" id="mynavbar">
 				<ul class="navbar-nav me-auto">
 					<span class="navbar-text">
-						修行人
+						佛
 					</span>
 					<?php
 					$mainmu = $Menu->all(['sh' => 1, 'menu_id' => 0]);
@@ -83,7 +83,7 @@
 							</div>
 
 							<div class="container">
-								<label for="uname"><b>佛知法號:</b></label>
+								<label for="uname"><b>佛之法號:</b></label>
 								<input type="text" placeholder="嗡（ong）、嘛（ma）、呢（ni）、叭（bei）、咪（mei）、吽（hong）" name="acc"type="text" required>
 
 								<label for="psw"><b>佛之秘藏:</b></label>
