@@ -1,6 +1,10 @@
 <?php
 if (isset($_SESSION['login'])) {
-	to("back.php");
+	echo"<script>";
+	echo "location.href='./back.php'";
+	echo"</script>";
+	// to("back.php");
+	// echo "hellow";
 }
 if (isset($_GET['error'])) {
 	echo "<script>alert('{$_GET['error']}')</script>";
